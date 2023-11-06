@@ -1,38 +1,44 @@
-/* ESTILO 1 */
+/* ESTILO 1  resetamos o estilo da página removendo os espaçamentos 
+internos e margens e aplicando o box-sizing: border-box*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;/*margem*/
+    padding: 0;/*Espaçamento interno*/
+    box-sizing: border-box; /*'caixa' do cabeçalho*/
 }
 
 /* ESTILO 2 */
 header{
-    padding: 16px 0;
-    background-color: #182C61;
-    color: #ecf0f1;
+    padding: 16px 0;/*Espaçamento interno de 16px e 0 nas laterais*/
+    background-color: #182C61;/*Cor de fundo do cabeçalho*/
+    color: #ecf0f1;/*Cor do texto no cabeçalho*/
 }
 
 header nav li {
-    display: inline;
-    margin-left: 16px;
-    font-size: 18px;
+    display: inline; /*Menus em linha*/
+    margin-left: 16px;/*Margem entre eles*/
+    font-size: 18px;/*Tamanho da fonte deles*/
 }
 
-header nav li a{
-    color: #ecf0f1;
-    text-decoration: none;
+header nav li a{ /*Para mudar o texto do menu, precisamos ultilizar o a apos o li*/
+    color: #ecf0f1;/*Cor da fonte do menu*/
+    text-decoration: none;/*remove o underline dos links*/
 }
 
-/* ESTILO 3 */
+/* ESTILO 3 criamos a classe container limitando sua largura em 1280px e 
+centralizando-o. Com isso o conteúdo do site estará centralizado e o 
+ocupará até 1280px desde que o monitor tenha essa resolução na 
+largura*/
 .container{
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 1280px;/*Largura maxima de 1280px*/
+    width: 100%;/*Largura de 100% ate chegar em 1280 px*/
+    margin: 0 auto;/*margem 0 no top e baixo, nas laterais, auto */
 }
 
-/* ESTILO 4 */
+/* ESTILO 4 sobrescrevemos o CSS do container dentro do header para 
+usarmos display: flex e os itens do cabeçalho (título e menu) fiquem lado 
+a lado.*/
 header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;/*colocar em linha*/
+    align-items: center;/*Centralizar eles dentro do cabeçalho*/
+    justify-content: space-between;/*Titulo para a direita e menu para a esquerda*/
 }
