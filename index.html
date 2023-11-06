@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Shop - A sua loja de game</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css"><!--chamando o arquivo css-->
+    <!--Adicionando Fonrtes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,11 +28,71 @@
     </header>
     <section id="about">
         <div class="container">
-            <ima class="store-front" src="./loja.jpg" alt="Fachada da Loja Games Shop" />
+            <img class="store-front" src="./loja.jpg" alt="Fachada da Loja Games Shop" />
             <div>
                 <h2>Sobre a loja</h2>
+                <p>
+                    Na Games Shop, mergulhamos profundamente no mundo dos jogos para trazer a você a melhor seleção de títulos, acessórios e produtos relacionados ao universo dos games. Somos mais do que uma loja; somos um destino para os entusiastas dos jogos, um lugar onde paixão e entretenimento se encontram.
+                </p>
+                <p>
+                    Explore um vasto catálogo de jogos, desde os mais recentes lançamentos até clássicos atemporais. Nossos estoques incluem títulos para todas as plataformas, desde PC e consoles até jogos móveis. Quer você seja um jogador casual ou um competidor ávido, temos algo especial para todos. E, se você busca jogos de realidade virtual, RPGs envolventes, ação frenética ou quebra-cabeças desafiadores, nossa loja é o lugar certo para você.
+                </p>
+                <ul class="brands-list"><!--Lista Não Ordenada-->
+                    <li><img src="./nintendo.png" alt="Nintendo"></li><!--Itens da lista-->
+                    <li><img src="./xbox.png" alt="Xbox"></li>
+                    <li><img src="./playstation.png" alt="PlayStation"></li>
+                </ul>
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale Conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu Nome" required/><!--Criação da box para digitar o nome-->
+                        <input type="email" placeholder="Seu E-mail"required/><!--Criação da box para digitar o e-mail-->
+                        <input type="tel" placeholder="Seu Telefone (opcional)"/><!--Criação da box para digitar o telefone-->
+                        <textarea placeholder="Sua Mensagem"required></textarea><!--Criando caixa de texto para o usuario digitar uma mensagem-->
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos Acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./instagram.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./facebook.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                                <img src="./youtube.png" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua Goias nº 360, Centro - Divinópolis-MG
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container"></div>
+        <p>
+            &copy; Games Shop - Todos os Direitos Reservados - 2033
+        </p>
+    </footer>
 </body>
 </html>

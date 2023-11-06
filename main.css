@@ -6,6 +6,18 @@ internos e margens e aplicando o box-sizing: border-box*/
     box-sizing: border-box; /*'caixa' do cabeçalho*/
 }
 
+header,
+section h2,
+section h3,
+form button{
+    font-family: 'Bungee', sans-serif;
+    font-weight: normal;/*Removendo as configuração padroes do navegador e aplicando uma adequada*/
+}
+
+body,input,textarea{
+    font-family: 'Roboto', sans-serif; /*Adionando a fonte aos textos do site*/
+}
+
 /* ESTILO 2 */
 header{
     padding: 16px 0;/*Espaçamento interno de 16px e 0 nas laterais*/
@@ -37,8 +49,95 @@ largura*/
 /* ESTILO 4 sobrescrevemos o CSS do container dentro do header para 
 usarmos display: flex e os itens do cabeçalho (título e menu) fiquem lado 
 a lado.*/
-header .container{
+header .container,
+section .container{ /*Colocando a seção em linhas e dividindo*/
     display: flex;/*colocar em linha*/
     align-items: center;/*Centralizar eles dentro do cabeçalho*/
     justify-content: space-between;/*Titulo para a direita e menu para a esquerda*/
+}
+
+.brands-list img{
+    height: 24px; /*Tamanho das imagens das marcas*/
+}
+
+.brands-list li{ /*Elementados dentro das listas*/
+    display: inline;/*Logos lado a lado*/
+    margin-right: 8px;
+}
+section .container{/*Aproveitamos o que estava definido antes, porem mudamos somente o que for necessario*/
+    align-items: flex-start;/*Conteudo começando no topo, configuração a parte da seção*/
+}
+section{
+    padding: 24px 0; /*Espaço para seção, distanciando do cabeçalho*/
+    color: #182C61;/*Cor de fundo do titulo h2*/
+}
+section h2{/*personalizando o titulo da seção*/
+    margin-bottom: 16px; 
+}
+section p{/*Personalizando o paragrafo da seção*/
+    margin-bottom: 8px;
+}
+.store-front {/*Colocando margem lateral na imagens da seção*/
+    margin-right: 32px;
+}
+.social-links img{/*Mudando o tamanho das imagens das redes sociais*/
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;/*Tirando a sujeitinha das redes sociais*/
+}
+
+#contact .container{/*Mudando o formato do que esta dentro da seção contatos*/
+    display: block;
+    
+}
+.contact-methods {
+    display: flex; /*colocando na mesma linha*/
+    justify-content: space-between;/*justificando e alinhando */
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{/*Travar o tamanho da caixa de texto do textarea*/
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{/*Mudar a cor do butão ao passar o mouse*/
+    background-color: #345ac4;
+}
+
+input:focus, textarea:focus{
+    outline-color:#182C61;
+}
+
+footer{
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
 }
