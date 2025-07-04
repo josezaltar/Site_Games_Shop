@@ -37,7 +37,7 @@ Como este é um projeto estático (HTML e CSS), não há um processo de build co
 
 1.  Clone o repositório:
     \`\`\`sh
-    git clone [https://github.com/SEU_USUARIO/games-shop.git](https://github.com/SEU_USUARIO/games-shop.git)
+    git clone [https://github.com/josezaltar/Site_Games_Shop.git](https://github.com/josezaltar/Site_Games_Shop.git)
     \`\`\`
 2.  Navegue até o diretório do projeto:
     \`\`\`sh
